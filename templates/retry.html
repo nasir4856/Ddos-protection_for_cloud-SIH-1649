@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retry Captcha</title>
+    <script>
+        setTimeout(function() {
+            window.location.href = "{{ url_for('captcha_verification') }}";  // Redirect to captcha page
+        }, 5000);  // 5 seconds timer
+    </script>
+</head>
+<body>
+    <h1>Captcha verification failed. Retrying in 5 seconds...</h1>
+</body>
+</html>
